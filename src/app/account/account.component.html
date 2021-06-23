@@ -1,0 +1,14 @@
+
+<div>
+
+<h2>fetching the Account Information!</h2>
+<p>{{amount}}</p>
+Enter Amount:<input type="number" name="amount" [(ngModel)]="amount">
+<button (click)="handleClick()">View Details</button>
+
+
+<div *ngIf="details">
+Account number:{{details.accno}}<br/>
+amount:{{details.amount}}
+</div>
+</div>
